@@ -27,7 +27,3 @@ $ yarn
 # run the development project
 $ yarn start
 ```
-
-## Tech Stack
-
-- React.js
