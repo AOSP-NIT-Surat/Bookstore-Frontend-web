@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  box-shadow: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  min-height: 100vh;
+  display: flex;
+  font-weight: 400;
+  font-family: sans-serif;
+  background: #12c2e9;
+  background: -webkit-linear-gradient(
+    to right,
+    #df8e16,
+    #d6ac4f,
+    #d48d22
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #492c00,
+    #cfa13f,
+    #492c00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body,
+html,
+.App,
+#root,
+.outer {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-light {
+  background-color: #492c00;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+
+.inner {
+  width: 450px;
+  margin: auto;
+  background: #ffffffe0;
+  box-shadow: 0px 14px 80px rgba(0, 0, 0, 0.2);
+  padding: 45px 45px 40px 45px;
+  border-radius: 20px;
+  transition: all 0.3s;
+}
+
+.outer .form-control:focus {
+  border-color: #167bff;
+  box-shadow: 50px;
+}
+
+.outer h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  font-weight: 400;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+}
+
+label {
+  padding: 10px 0px 10px 0px;
+}
+
+.form-control {
+  padding: 0px 0px 170px 0px;
+}
+
+.btn.btn-dark.btn-lg.btn-block {
+  margin: 20px 0px 0px 0px;
+}
+
+link.navbar-brand {
+  color: white;
+}
+
+#nav {
+  color: white;
+  padding: 10px 20px 10px 10px;
+}
+#nav1 {
+  color: white;
+  margin: 0em 0em 0em 49em;
+}
+
+div.inner {
+  margin-top: 5em;
 }
