@@ -7,4 +7,5 @@ Check out the [CONTRIBUTING Guidelines](https://github.com/AOSP-NIT-Surat/Bookst
 
 ## Tech Stack
 - React.js
+- Bootstrap
 - Web Design.
