@@ -1,20 +1,22 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 
 export default class Login extends Component {
     render() {
         return (
+            <div className="outer">
+            <div className="inner">
             <form>
 
-                <h3>LOGIN</h3>
+                <h3><b>LOGIN</b></h3>
 
                 <div className="form-group">
-                    <label>Email:</label>
+                    <label>Email</label>
                     <input type="email" className="form-control" placeholder="Enter email" required />
                 </div>
 
                 <div className="form-group">
-                    <label>Password:</label>
+                    <label>Password</label>
                     <input type="password" className="form-control" placeholder="Enter password" required />
                 </div>
 
@@ -27,9 +29,11 @@ export default class Login extends Component {
 
                 <button type="submit" className="btn btn-dark btn-lg btn-block">Sign in</button>
                 <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
+                    New User?<Link to={"/signup"}>Register</Link>
                 </p>
             </form>
+            </div>
+            </div>
         );
        
     }
