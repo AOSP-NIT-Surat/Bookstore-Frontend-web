@@ -1,9 +1,10 @@
 import React from 'react'
+import User from './Components/User';
 
 function App() {
   return (
     <div className="App">
-      Bookstore Frontend
+      <User/>
     </div>
   );
 }
