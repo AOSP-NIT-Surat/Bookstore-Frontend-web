@@ -1,4 +1,5 @@
 import React from "react";
+import Addbook from "./pages/Addbook";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Layout from "./hocs/Layout";
@@ -9,7 +10,7 @@ function App() {
     <Router>
       <Layout>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={Addbook} />
         </Switch>
       </Layout>
     </Router>
