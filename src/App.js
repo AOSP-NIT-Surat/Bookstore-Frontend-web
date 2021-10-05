@@ -1,25 +1,27 @@
 import React from 'react';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Layout from './hocs/Layout';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
 import Login from "./pages/login.js";
 import SignUp from "./pages/signup.js";
 
 function App() {
-  return (
-  <Router>
-    <div className="App">
-    
-          <Switch>
-            <Route exact path='/' component={Login} />
+	return (
+		<div className="App">
+			<Router>
+				<Layout>
+					<Switch>
+						<Route exact path="/" component={Home} />
             <Route path="/login" component={Login} />
             <Route path="/signup" component={SignUp} />
-          </Switch>
-          </div>
-
-    </Router>
-  );
+						<Route path="/profile" component={Profile} />
+					</Switch>
+				</Layout>
+			</Router>
+		</div>
+	);
 }
 
 export default App;
