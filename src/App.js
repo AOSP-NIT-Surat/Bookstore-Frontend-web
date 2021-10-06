@@ -6,6 +6,7 @@ import Profile from './pages/Profile';
 import './App.css';
 import Login from './pages/Login.js';
 import Register from './pages/Register.js';
+import { Error404 } from './pages/Error404';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 						<Route path="/login" component={Login} />
 						<Route path="/register" component={Register} />
 						<Route path="/profile" component={Profile} />
+						<Route path="*" component={Error404} />
 					</Switch>
 				</Layout>
 			</Router>
