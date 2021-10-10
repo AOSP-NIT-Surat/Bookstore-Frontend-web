@@ -8,11 +8,12 @@ body {
   display: flex;
   font-weight: 400;
   font-family: sans-serif;
-  background: #12c2e9;
-  background: -webkit-linear-gradient(to right, #492c00, #cfa13f, #492c00);
-  background: linear-gradient(to right, #492c00, #cfa13f, #492c00);
+  /* background: #12c2e9; */
+  /* background: -webkit-linear-gradient(to right, #492c00, #cfa13f, #492c00);
+  background: linear-gradient(to right, #492c00, #cfa13f, #492c00);  */
+  background: -webkit-linear-gradient(to bottom, #161f6d, #007cc7, #00abe1);
+  background: linear-gradient(to bottom, #00abe1, #007cc7, #161f6d);
 }
-
 body,
 html,
 .App,
@@ -21,7 +22,9 @@ html,
   width: 100%;
   height: 100%;
 }
-
+.navbar.navbar-expand-lg.navbar-dark{
+  background-color: #00abe1;
+}
 .outer {
   display: flex;
   justify-content: center;
@@ -76,11 +79,19 @@ label {
 .form-control {
   padding: 0px 0px 170px 0px;
 }
-
-.btn.btn-dark.btn-lg.btn-block {
-  margin: 20px 0px 0px 0px;
+/* Login Signup Button */
+.outer .inner form button.btn.btn-dark.btn-lg.btn-block {
+  color: #fff;
+  background: linear-gradient(to right, #007cc7, #161f6d);
+  outline: none;
+  border: 1px solid #161f6d;
 }
-
+.outer1 .inner form button.btn.btn-dark.btn-lg.btn-block {
+  color: #fff;
+  background: linear-gradient(to right, #007cc7, #161f6d);
+  outline: none;
+  border: 1px solid #161f6d;
+}
 link.navbar-brand {
   color: white;
 }
@@ -110,4 +121,3 @@ input.form-control {
   margin-top: 1em;
   text-align: left;
 }
-

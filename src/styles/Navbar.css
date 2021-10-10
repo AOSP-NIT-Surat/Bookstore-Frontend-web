@@ -1,0 +1,20 @@
+.navbar.navbar-expand-lg.navbar-dark{
+  background-color: #161f6d;
+}
+.navbar-brand {
+  color: #00abe1 !important;
+}
+.nav-item .btn-outline-light {
+  /* background: #00abe1; */
+  background: linear-gradient(to right, #00abe1, #007cc7);
+  color: #fff;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid #007cc7;
+  transition: all 0.5s ease-in-out;
+}
+.nav-item .btn-outline-light:hover {
+  background: linear-gradient(to right, #007cc7, #00abe1);
+  border: 2px solid #007cc7;
+  outline: none;
+}
