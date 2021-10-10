@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Layout from './hocs/Layout';
@@ -22,6 +24,7 @@ function App() {
 			</Router>
 		</div>
 	);
+
 }
 
 export default App;
